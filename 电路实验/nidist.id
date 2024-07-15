@@ -1,0 +1,11 @@
+[Volume Id]
+DistributionGUID={78A91FA3-1934-4784-8542-D76D43AC93B1}
+DistPackageGUID={E363A1A4-2269-42E4-A63B-7AC26408999D}
+DistributionVersion=14.1.0
+DistributionType=Application
+DistributionLanguage=0009,0007
+Volume=1
+TotalNumberOfVolumesInDistribution=1
+ExePath=setup.exe
+UpdateInfoFile=Bin\updateInfo.xml
+MD5ChecksumFile=Bin\dist_md5_1.xml

@@ -1,0 +1,4 @@
+﻿  源.cpp
+C:\Users\LeBlanc\Desktop\算法平台作业\程序设计基础\Project1\源.cpp(13,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\程序设计基础\Project1\源.cpp(18,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Project1.vcxproj -> C:\Users\LeBlanc\Desktop\算法平台作业\程序设计基础\Project1\x64\Debug\Project1.exe

@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta name="ContentType" content="readme">
+<meta name="ProductCategories" content="9820, 9825, 9826, 9976, 6868, 9645, 9646, 9043, 9644, 9643"/>
+<title>Circuit Design Suite 14.1 Readme for Windows</title>
+
+<style type="text/css">
+/***************************************************/
+/* MINIMAL STYLES */
+/* The following section defines styles that every HTML Help project should need. */
+
+/* Specifies White Background color */
+body {background-color:#ffffff}
+
+/* The default style of P is red to alert you that you need to apply a style class, such as Body. */
+P { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color: #000000; }
+
+BR { font-size:4.00pt; }
+
+H1,H2,H3,H4,H5,H6 { color:#000000 }
+
+/* Use H1 for all topic headings. */
+H1 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:12pt; font-weight:bold;  }
+
+/* Use H2 for second-level headings. */
+H2 { margin-top:9.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:10pt; font-weight:bold;  }
+
+/* Use H3 for third-level headings. */
+H3 { margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use H4 for fourth-level headings. */
+H4 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* H5 and H6 have the same definition as H4 because you should not need this level of heading in one topic. If you need to use H5 or H6, consider breaking up your topic into more than one topic. */
+H5 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+H6 { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; font-weight:bold;  }
+
+/* Use the Body style class for normal paragraphs. */
+P.Body { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the Anchor style class for graphic references on a line by themselves. */
+P.Anchor { margin-top:6.00pt; margin-bottom:6.00pt; font-family:Verdana; font-size:10pt; color:#000000;  }
+
+/* Use the Indent style classes to indent a paragraph. If you need to indent text below a list item, use to start the new paragraph within the same set of tags. If you need to indent a list within another list, nest the indented list within the first list's set of or tags. */
+P.Indent1 { margin-left:12.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent2 { margin-left:24.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+P.Indent3 { margin-left:36.00pt; margin-top:6.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+/* Use the LI style for all list items. */
+LI { margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000; }
+
+
+
+/* Use the OL style for numbered lists. You do not have to type the number for each list item in a numbered list. */
+OL { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the OL style for numbered lists. Nested lists will use the bullet types according to the nesting scheme below */
+ol ol {list-style-type:lower-alpha}
+ol ol ol {list-style-type:decimal}
+ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol {list-style-type:lower-alpha}
+ol ol ol ol ol ol ol {list-style-type:decimal}
+ol ol ol ol ol ol ol ol {list-style-type:lower-alpha}
+
+
+/* Use the EquationNum style class for numbered lists of equations. You do not have to type the number for each list item in a numbered list. */
+OL.EquationNum { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+
+/* Use the List-abc style class for lettered lists. You do not have to type the letter for each list item in a lettered list. */
+OL.List-abc { margin-left:18.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type:lower-alpha; }
+
+/* Use the UL style for bulleted lists. You do not have to type the bullet for each list item in a bulleted list. */
+UL { margin-left:12.00pt; text-indent:0pt; margin-top:3.00pt; margin-bottom:3.00pt; font-family:Verdana; font-size:8pt; color:#000000;}
+
+/* Use the List-Box style class for bulleted lists with boxes instead of bullets. You do not have to type the box for each list item in a box list. */
+UL.List-Box { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: square; }
+
+
+/* Use the Borderless style class for tables that do not need borders, such as for 2-column or 3-column lists with no headings. */
+Table.Borderless { border:none; }
+
+/* Use the Bordered style class for tables that need borders. */
+Table.Bordered { border-width: 1pt; border-style: solid; border-color: #000000; border-collapse: collapse; }
+
+/* Use the Borderless-Wide style class for tables that do not need borders and that you want to stretch to fill the entire topic width. */
+Table.Borderless-Wide { border:none; width:100%; }
+
+/* Use the Bordered-Wide style class for tables that need borders and that you want to stretch to fill the entire topic width. */
+Table.Bordered-Wide { border-width: 1pt; border-style: solid; border-color: #000000; width:100%; border-collapse: collapse; }
+
+/* Use the TD style for table cells in Borderless or Borderless-Wide tables. */
+TD { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; padding:3px; }
+
+/* Use the Bordered style class for table cells in Bordered or Bordered-Wide tables. */
+TD.Bordered { font-family:Verdana; font-size:8pt; color:#000000; vertical-align:top; border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Icon style class for table cells that contain note, caution, warning, or tip icons, or LabVIEW datatype terminals. */
+TD.Icon { width:40px; vertical-align:top; }
+
+/* Use the Table-cell-8pt style class for table cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TD.Table-cell-8pt { font-family:Verdana; font-size:7pt; color:#000000;  }
+
+/* Use the TH style for table heading cells in Borderless or Borderless-Wide tables. */
+TH { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; }
+
+/* Use the Bordered style class for table heading cells in Bordered or Bordered-Wide tables. */
+TH.Bordered { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold;  border-width: 1pt; border-style: solid; border-color: #000000; }
+
+/* Use the Table-cell-8pt style class for table heading cells in tables that contain a lot of information and need smaller text to fit it all on one screen to prevent a horizontal scroll bar from appearing. */
+TH.Table-Head-8pt { font-family:Verdana; font-size:7pt; color:#000000; font-weight:bold; }
+
+/* Use the Left-Align style class for table heading cells that you want to left align instead of center align. */
+TH.Left-Align { font-family:Verdana; font-size:8pt; color:#000000; font-weight:bold; padding:3px; text-align:left; }
+
+/***************************************************/
+/* CHARACTER FORMATS */
+/* The following section defines character formats that every HTML Help project should need. */
+
+/* Use the Dark-Red format for warnings or cautions. */
+#Dark-Red { color: #800000 }
+
+/* Use the Monospace format for code or syntax examples. */
+#Monospace { font-family: Courier New; font-size: 8pt; }
+
+/* Use the Monospace-Bold format for messages and responses that the computer automatically prints to the screen. */
+#Monospace-Bold { font-family: Courier New; font-size: 8pt; font-weight: bold; }
+
+/* Use the Monospace-Italic format to denote text that is a placeholder for a word or value that the user must supply. */
+#Monospace-Italic { font-family: Courier New; font-size: 8pt; font-style: italic; }
+
+/* Use the Platform format to denote a specific platform. */
+#Platform { color: #0000FF; font-weight: bold; }
+
+
+/* Use the Symbol format for characters not in the Verdana character set. Use this format sparingly. When possible, you should use the correct ASCII code for the symbol or use a graphic to recreate the symbol. */
+#Symbol { font-family: Symbol; font-size: 8pt; }
+
+/* The following styles define the color of links. */
+a:link { color: #007700 }
+a:hover { color: #FF0000 }
+a:active { color: #FF0000 }
+a:visited { color: #7F007F }
+
+/***************************************************/
+/* ACTIVITY STYLES */
+/* The following section defines styles that only tutorial-style HTML Help projects should need. */
+
+/* Use the Activity-Objective style class for the objective at the beginning of an activity topic. */
+H3.Activity-Objective { color: #800000; }
+
+/***************************************************/
+/* CODE STYLES */
+/* The following section defines styles that you need to format entire sections of code or syntax examples. If you have just a few words you need to format as a code or syntax example, use the Monospace character format. */
+
+P.Code { margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code1 { margin-left:12.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code2 { margin-left:24.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.Code3 { margin-left:36.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+
+/***************************************************/
+/* FUNCTION STYLES */
+/* The following section defines styles that you might need to format function reference help. */
+
+P.F-VI-Code4 { margin-left:48.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Code5 { margin-left:60.00pt; margin-top:3.00pt; margin-bottom:0.00pt; font-family:Courier New; font-size:8pt; color:#000000;  }
+P.F-VI-Equation { margin-top:9.00pt; margin-bottom:9.00pt; font-family:Verdana; font-size:8pt; color:#000000;  }
+
+OL.F-VI-EquationNum { margin-top:3.00pt; margin-bottom:3.00pt; text-indent:0pt; font-family:Verdana; font-size:8pt; color:#000000; list-style-type: decimal; }
+</style>
+</head>
+
+<body>
+
+<h1>NI Circuit Design Suite 14.1 Readme for Windows</h1>
+
+<p class="Body">February 2017</p>
+
+
+<p class="Body">This file contains important last-minute information about Circuit Design Suite 14.1 for Windows, including installation and compatibility issues.</p>
+
+<p>Refer to <em>Getting Started with NI Circuit Design Suite</em> for useful information about getting started with Circuit Design Suite. You can access this PDF from <strong>Start&#0187;All Programs&#0187;National Instruments&#0187;Circuit Design Suite 14.1 Documentation&#0187;Getting Started</strong>. </p>
+<p>You can also access this from the Multisim or Ultiboard Help menu.</p>
+
+<p class="Body">
+<a href="#platforms">Supported Platforms</a><br />
+<a href="#install">Installing Circuit Design Suite 14.1</a><br />
+<a href="#autoinstall">Automating the Installation of NI Products</a><br />
+<a href="#win10">Using NI Software with Microsoft Windows 10</a><br />
+<a href="#win8">Using NI Software with Microsoft Windows 8.1</a><br />
+<a href="#updates">Product Security and Critical Updates</a><br />
+<a href="#known">Known Issues</a><br />
+<a href="#bug_fixes">Bug Fixes</a><br />
+<a href="#newcomponents">New Components</a><br />
+<a href="#legal">Legal Information</a>
+</p>
+
+<h2><a id="platforms">Supported Platforms</a></h2>
+<p class="Body">To run Circuit Design Suite 14.1, your operating system (OS) must be one of:  </p>
+<ul>
+<li>Windows 10, 8.1 or 7 SP1.</li>
+<li>Windows Server 2012 R2. </li>
+<li>Windows Server 2008 R2 SP1.</li>
+</ul>
+
+<p class="Body">Your system must also meet or exceed the following: </p>
+<ul>
+<li>Pentium 4M (or equivalent) or later (32-bit).</li>
+<li>Pentium 4 G1 (or equivalent) or later (64-bit).</li>
+<li>1 GB of memory.</li>
+<li>2 GB of free hard disk space.</li>
+<li>1024 x 768 screen resolution.</li>
+<li>To develop custom LabVIEW-based instruments for use in Multisim, LabVIEW 2015 or 2016 is required.</li>
+</ul>
+
+<h2><a id="install">Installing Circuit Design Suite 14.1</a></h2>
+<p><strong>Note</strong></p> <ul> <li>If Windows Update is enabled, the installation process might hang if Windows Update interferes with the installation of Microsoft Visual C++ 2015 Run-Time. Visit <span class="Monospace">ni.com/info</span> and enter the Info Code <a href="http://digital.ni.com/express.nsf/bycode/exjq43" target="_blank">exjq43</a> for more information and steps to resolve this issue.</li> <li>If you purchased this product with an NI Software Suite or NI Product Bundle, use the installation media that shipped with your purchase to install this product.</li> </ul>
+
+
+<h3>Installing Multiple Versions</h3>
+
+<p class="Body">Circuit Design Suite 14.1 installs side-by-side with Circuit Design Suite 13.x and prior. </p>
+
+<h3>Archiving Circuit Design Suite databases</h3>
+<p class="Body">National Instruments recommends that you regularly back up the files created within the Multisim and Ultiboard components of NI Circuit Design Suite. Additionally, you should back up internal files that store user-created data, such as databases. For more information about which files to backup and where to find them, refer to the Help.</p>
+
+
+
+<h3>Uninstalling</h3>
+
+<p class="Body">Uninstalling Circuit Design Suite will not remove user data. For more information about the locations of user database and configuration files, refer to the Archiving Data Help topic.</p>
+
+<h3><a name="updates"><span class="instructions">Circuit Design Suite 14.1</span> Updates and Notifications</a></h3>
+
+<p class="Body">National Instruments posts information about critical updates and security notifications on <code>ni.com</code>. Visit <code>ni.com/info</code> and enter Info Code <a href="http://digital.ni.com/express.nsf/bycode/updates">updates</a> to access this information. </p>
+
+
+<h2><a name="autoinstall">Automating the Installation of NI Products</a></h2>
+<p class="Body">You can automate the installation of most NI products using command-line arguments to suppress some or all of the installer user interface and dialog boxes. However, starting with the August 2012 releases (products using NI Installers version 3.1 or later), you may need to perform additional steps before or during an automatic installation of NI software.</p>
+
+<p class="Body">If the NI product you are installing uses Microsoft .NET 4.0, the .NET installer may run before any NI software installs and may require a reboot before the installation of NI software begins. To avoid a .NET reboot, install .NET 4.0 separately before you install NI software.</p>
+
+<p class="Body">For more information, refer to the following KnowledgeBase articles:</p>
+<ul>
+<li>For more information on silent installations of individual NI products, refer to KB 4CJDP38M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerAutomation">Automating the Installation of a Single Installer</a>.</li>
+<li>For more information on silent installations of suited NI products, such as NI Developer Suite, refer to KB 4GGGDQH0, <a href="http://digital.ni.com/express.nsf/bycode/SuiteInstallerAutomation">How Do I Automate the Installation of a Suited Installer?</a>.</li>
+<li>To determine what version of NI Installers your product contains, refer to KB 4CJDR18M, <a href="http://digital.ni.com/express.nsf/bycode/InstallerVersion">How Can I Determine the Type and Version of My National Instruments Installer?</a>.</li>
+</ul>
+
+<!-- Windows 10 Support Information-->
+<h2><a name="win10">Using NI Software with Microsoft Windows 10</a></h2>
+<p>Microsoft Windows 10 is the latest version of the Windows operating system and features significant changes compared to previous versions. Windows 10 introduces several new capabilities and also combines features from both Windows 7 and Windows 8. For more information about NI support for Windows 10, visit <a href="http://ni.com/windows10" target="_blank">ni.com/windows10</a>.</p>
+
+<!-- Windows 8 Support Information-->
+
+<h2><a name="win8">Using NI Software with Microsoft Windows 8.1</a></h2>
+
+<p class="Body">When you install NI software on Microsoft Windows 8.1, you will notice a few additional tiles on the Start screen, including shortcuts to NI application software products.</p>
+
+<h3>Using NI Launcher</h3>
+<p class="Body">NI Launcher helps you find and launch installed NI products. It provides you with a method of finding NI products similar to the Start menu in previous versions of Microsoft Windows. To use NI Launcher, click the <strong>NI Launcher</strong> tile on the Start screen. NI Launcher launches the desktop and opens a menu containing a list of NI products. Click any NI product to launch it.</p>
+
+<h3>Pinning Frequently Used Applications</h3>
+<p class="Body">For convenience, you can pin your most-used NI applications to either the Start screen or the Taskbar on the desktop, as necessary:</p>
+<table class="Bordered">
+	<tr><td class="Bordered"><strong>Current Application</strong></td><td class="Bordered"><strong>Icon Location</strong></td><td class="Bordered"><strong>Pin to Action</strong></td></tr>
+	<tr><td class="Bordered">Windows 8.1 Desktop</td><td class="Bordered">Desktop Taskbar</td><td class="Bordered">Right-click application and select <strong>Pin to Taskbar</strong></td></tr>
+	<tr><td class="Bordered">Windows 8.1 Desktop</td>
+<td class="Bordered">Start screen</td><td class="Bordered">Right-click application and select <strong>Pin to Start</strong></td></tr>
+	<tr>
+<td class="Bordered">Windows 8.1 Start screen</td><td class="Bordered">Desktop Taskbar</td><td class="Bordered">Right-click application and select <strong>Pin to taskbar</strong> from the menu bar on the bottom of the screen</td></tr>
+</table>
+
+<h3>Finding All Programs</h3>
+<p class="Body">If you want to find a particular application or related files, such as documentation files, from the Start screen, you can access all installed files by right-clicking anywhere on the Start screen and selecting <strong>All apps</strong>. A list of all installed software and related files appears, in alphabetical order by creator or type.</p>
+
+<p class="Body">For more information about NI support for Windows 8.1, visit <a href="http://ni.com/windows8">ni.com/windows8</a>.</p>
+
+<h2><a name="updates">Product Security  and Critical Updates</a></h2>
+
+<p>Visit <a href="http://www.ni.com/security" target="_blank">ni.com/security</a> to view and subscribe to receive security notifications about National Instruments products. Visit <a href="http://ni.com/critical-updates" target="_blank">ni.com/critical-updates</a> for information about critical updates from National Instruments.</p>
+
+<h2><a id="known">Known Issues</a></h2>
+
+<h3>LabVIEW</h3>
+
+<p class="Body">LabVIEW functionality (LabVIEW instruments and grapher interpolation) will not work if the installation path uses characters that are not native to the "Language for non-Unicode programs" setting, available by selecting <strong>Start&#0187;Control Panel&#0187;Regional and Language Options</strong> and selecting the <strong>Advanced</strong> tab. In the Vista OS, use the "Current language for non-Unicode programs:" setting in the <strong>Administrative</strong> tab. LabVIEW functionality works for Unicode characters that are native to this setting. </p>
+
+
+<h3>Circuit Design Suite</h3>
+
+<p class="Body">Multisim and Ultiboard leak GDI resource handles when used over extended periods of time, eventually leading to unpredictable user interface behavior and crashes. This is an issue with MFC applications running on Windows XP SP2 and Windows Server 2003. For more information and workarounds, refer to <a href="http://digital.ni.com/public.nsf/allkb/E7EC0475F3B2022F8625741A006B4879">KB 4JREGSXL:Multisim or Ultiboard Leaking GDI Resource Handles.</a></p>
+
+<p class="Body"><i>Multisim Help</i> and <i>Ultiboard Help</i> display in very small windows on high resolution monitors (e.g., 3200 x 1800). To enlarge the windows, click in a help topic, hold down <code>Ctrl</code> and spin the mouse wheel. For notebook computers with precision touchpads, hold down <code>Ctrl</code> and use pinch-in and pinch-out gestures to zoom to the desired level.</p>
+
+
+<h2><a id="bug_fixes">Bug Fixes</a></h2>
+<p class="Body">The following is a subset of the issues fixed since the last release of Circuit Design Suite.</p>
+
+<table class='Bordered'>
+<tr><td class='Bordered' colspan=2><strong>Multisim ( 15 )</strong></td></tr>
+<tr><th class='Bordered'>Bug ID</th><th>Description</th></tr>
+<tr>
+  <td class='Bordered'>601548</td>
+  <td class='Bordered'>MultiSim throws Internal Simulation Error with Word generator and Logic Analyzer.</td>
+</tr>
+<tr>
+    <td class='Bordered'>615490</td>
+  <td class='Bordered'>When using Worst Case Scenario analysis, the values change when they shouldn't for different runs of the analysis.</td>
+</tr>
+<tr>
+  <td class='Bordered'>588152</td>
+  <td class='Bordered'>Breadboard view causes Multisim to crash for QuizShow sample file in Student tier.</td>
+</tr>
+<tr>
+    <td class='Bordered'>615085</td>
+  <td class='Bordered'>Worst case does not always use the right component values when pressing the play button.</td>
+</tr>
+<tr>
+  <td class='Bordered'>581111</td>
+  <td class='Bordered'>Greek lettering used about pins of Symbols for Induction Machine Wound Extended and Induction Machine Squirrel Cage Extended, do not correspond well with the Pin Names applied.</td>
+</tr>
+<tr>
+  <td class='Bordered'>572487</td>
+  <td class='Bordered'>DIVIDER symbol should use autocolor.</td>
+</tr>
+<tr>
+  <td class='Bordered'>572481</td>
+  <td class='Bordered'>ABM Sources should have useful model name.</td>
+</tr>
+<tr>
+    <td class='Bordered'>572485</td>
+  <td class='Bordered'>Improve symbol pin label positions for the VOLTAGE_GAIN_BLOCK.</td>
+</tr>
+<tr>
+  <td class='Bordered'>586695</td>
+  <td class='Bordered'>Importing code model DLLs does not work.</td>
+</tr>
+<tr>
+  <td class='Bordered'>363322</td>
+  <td class='Bordered'>Power Sources failing ERC checks in a expected configuration.</td>
+</tr>
+<tr>
+  <td class='Bordered'>539505</td>
+  <td class='Bordered'>OECL font-style and font-size not working.</td>
+</tr>
+<tr>
+  <td class='Bordered'>562105</td>
+  <td class='Bordered'>Component 74HC85XX_6V produce netlist errors when try to run a simulation.</td>
+</tr>
+<tr>
+  <td class='Bordered'>520560</td>
+  <td class='Bordered'>Spice warnings do not appear in Multisim spreadsheet view.</td>
+</tr>
+<tr>
+  <td class='Bordered'>610772</td>
+  <td class='Bordered'>Multisim 14.0 not assigning net names.</td>
+</tr>
+<tr>
+  <td class='Bordered'>615490</td>
+  <td class='Bordered'>When using Worst Case Scenario analysis, the values change when they shouldn't for different runs of the analysis.</td>
+</tr>
+
+<tr><td class='Bordered' colspan=2><strong>Ultiboard ( 4 )</strong></td></tr>
+<tr><th class='Bordered'>Bug ID</th><th>Description</th></tr>
+<tr>
+  <td class='Bordered'>568090</td>
+  <td class='Bordered'>No polarity marker in certain electrolytic capacitors  footprints in Ultiboard.</td>
+</tr>
+<tr>
+  <td class='Bordered'>569718</td>
+  <td class='Bordered'>Fanout does not work on parts that use THT pins in addition to SMT pads.</td>
+</tr>
+<tr>
+  <td class='Bordered'>587824</td>
+  <td class='Bordered'>Pins are not recognized when forward annotated to Ultiboard 14.0.</td>
+</tr>
+<tr>
+  <td class='Bordered'>614189</td>
+  <td class='Bordered'>Vias in attached file are incorrectly connected to power planes when exported to Gerber.</td>
+</tr>
+</table>
+
+<h2><a id="newcomponents">New Components</a></h2>
+
+<p class="Body">Refer to the Database section of the Multisim 14.1 Features and Improvements topic of <i>Multisim Help</i> for a list of new components.</p>
+
+<br/>
+
+<hr />
+<h2><a name="legal">Legal Information</a></h2>
+<!--Copyright-->
+<h3>Copyright</h3>
+<p class="Body">&#0169; 2006-2017 National Instruments Corporation. All rights reserved.</p>
+
+<p class="Body">Under the copyright laws, this publication may not be reproduced or transmitted in any form, electronic or mechanical, including photocopying, recording, storing in an information retrieval system, or translating, in whole or in part, without the prior written consent of National Instruments Corporation.</p>
+
+<p class="Body"><strong>End-User License Agreements and Third-Party Legal Notices</strong></p>
+<p class="Body">You can find end-user license agreements (EULAs) and third-party legal notices in the following locations:</p>
+<ul>
+<li>Notices are located in the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> and <span class="Monospace">&lt;National Instruments&gt;</span> directories.</li> 
+<li>EULAs are located in the <span class="Monospace">&lt;National Instruments&gt;\Shared\MDF\Legal\license</span> directory.</li>
+<li>Review <span class="Monospace">&lt;National Instruments&gt;\_Legal Information.txt</span> for information on including legal information in installers built with NI products.</li>
+</ul>
+
+<p><strong>U.S. Government Restricted Rights</strong></p>
+<p>If you are an agency, department, or other entity of the United States Government (&quot;Government&quot;), the use, duplication, reproduction, release, modification, disclosure or transfer of the technical data included in this manual is governed by the Restricted Rights provisions under Federal Acquisition Regulation 52.227-14 for civilian agencies and Defense Federal Acquisition Regulation Supplement Section 252.227-7014 and 252.227-7015 for military agencies.</p>
+
+<p><strong>IVI Foundation Copyright Notice</strong></p>
+
+<p><span class="DNL">Content from the IVI specifications reproduced with permission from the IVI Foundation.</span></p>
+
+<p><span class="DNL">The IVI Foundation and its member companies make no warranty of any kind with regard to this material, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The IVI Foundation and its member companies shall not be liable for errors contained herein or for incidental or consequential damages in connection with the furnishing, performance, or use of this material.</span></p>
+
+<p class="Body"><strong>Trademarks</strong></p>
+
+<p class="Body">Refer to the <em><span class="DNL">NI Trademarks and Logo Guidelines</span></em> at <a href="http://digital.ni.com/express.nsf/bycode/rdtrad" target="_blank"><span class="DNL">ni.com/trademarks</span></a> for information on <span class="DNL">National Instruments</span> trademarks. Other product and company names mentioned herein are trademarks or trade names of their respective companies.</p>
+
+
+<!--Patents-->
+<p class="Body"><strong>Patents</strong></p>
+<p class="Body">For patents covering the National Instruments products/technology, refer to the appropriate location: <strong>Help&#0187;Patents</strong> in your software, the <span class="Monospace">patents.txt</span> file on your media, or the <em>National Instruments Patent Notice</em> at <a href="http://digital.ni.com/express.nsf/bycode/rdlv17" target="_blank">ni.com/patents</a>.</p>
+
+<p>375231C-01</p>
+
+</body>
+</html>
+
+
+
+

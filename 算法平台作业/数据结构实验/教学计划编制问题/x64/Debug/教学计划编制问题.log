@@ -1,0 +1,9 @@
+﻿  源.c
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(41,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(53,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(62,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(66,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(128,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(148,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\源.c(185,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  教学计划编制问题.vcxproj -> C:\Users\LeBlanc\Desktop\算法平台作业\数据结构实验\教学计划编制问题\x64\Debug\教学计划编制问题.exe
